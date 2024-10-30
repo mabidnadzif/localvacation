@@ -1,0 +1,304 @@
+/* Navbar */
+.navopacity {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Semua Device */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+.carousel-item {
+    margin-top: -65px;
+
+}
+
+/* card */
+.card-title {
+    color: white !important;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 7px 7px 7px rgba(0 ,0 ,0,1);
+}
+
+.tom {
+    margin-top: 25px ;
+    border-radius: 40px;
+}
+
+
+
+
+/* jumbotron */
+.jumbotron {
+
+    background-image: url(foto/subkonten/pantaikemangi.jpg)  ;
+    background-size: cover ;
+    height: 600px;
+
+    
+}
+
+.jumbotron .display-4 {
+    font-family: 'Bebas Neue', cursive;
+    color: orange;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0 ,0 ,0,0.6);
+    margin-top: 250px;
+}
+
+
+.judul {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workingspace h3 {
+    font-size: 45px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.workingspace h3 span {
+    font-weight: 500;
+}
+
+.social-links {
+    margin-right: 30px;
+
+}
+
+
+
+
+
+
+
+/* Versi deskop */
+
+@media (min-width: 992px) { 
+
+    .navbar-brand,.nav-link{
+        color: white !important;
+        text-shadow: 5px 5px 5px rgba(0 ,0 ,0,0.7);
+
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B36BC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    
+    }
+
+    .jumbotron {
+
+        margin-top: -50px;
+    }
+
+    .namawst {
+        font-weight: bold;
+        font-size: 55px;
+    }
+
+
+ }
+
+ /* Versi Mobile */
+
+ @media (max-width: 574px) {
+
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+
+    .carousel-caption, .p {
+        font-size: 10px;
+        text-align:center;
+    }
+
+    .nav-link::after {
+
+        content: '';
+        display: block;
+        background: #0B36BC;
+        width: 0px;
+        height: 2px;
+        transition: width 0.3s;
+       
+    
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        width: 100px;
+    
+    }
+
+    .judul {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 35px;
+    }
+
+    .namawst {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 35px;
+    }
+
+    .subisi {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 27px;
+    }
+
+    .workingspace h3 {
+        font-size: 20px;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    
+    .workingspace h3 span {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .workingspace p {
+        font-size: 12px;
+    }
+    
+    .workingspace .tombol {
+       font-size: 12px;
+    }
+
+    .card-title {
+        color: white !important;
+        text-align: center;
+        margin-top: 170px;
+        text-shadow: 7px 7px 7px rgba(0 ,0 ,0,1);
+    }
+
+    .jumbotron {
+
+        background-size: cover ;
+        height: 300px;
+    
+        
+    }
+
+    .footer h2 {
+        font-size: 20px;
+        margin-bottom: 70px;
+        margin-left: 20px;
+    }
+
+    .footer .footer-col {
+        font-size: 10px;
+
+    }
+    
+    
+ }
+
+
+ /* footer */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 30%;
+}
+    .footer-col .social-links {
+        width: 100%;
+    }
+
+}
